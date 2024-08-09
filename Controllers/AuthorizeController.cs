@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UnityWebCore.Models.Auth;
 
 namespace UnityWebCore.Controllers
 {
@@ -12,9 +13,9 @@ namespace UnityWebCore.Controllers
                 }
 
                 [HttpPost("register")]
-                public IActionResult Register()
+                public IActionResult Register(RegisterRequest registerRequest)
                 {
-                        return Ok();
+                        return Ok("Success");
                 }
         }
 }
